@@ -1,0 +1,241 @@
+/* App.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #006400;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: url("/hero-bg.jpg") center/cover no-repeat;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: white;
+  background-color: #004d00;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ffffff;
+}
+
+.image-box img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.note {
+  flex: 1;
+}
+
+.note h3 {
+  margin-bottom: 0.5rem;
+  color: #006400;
+}
+
+/* Registration Form */
+.register {
+  padding: 2rem;
+  background-color: #e8f5e9;
+}
+
+.register h3 {
+  text-align: center;
+  color: #006400;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+input,
+textarea,
+button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #006400;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d00;
+}
+
+/* About */
+.about {
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about h3 {
+  color: #006400;
+}
+
+/* Contact */
+.contact {
+  padding: 2rem;
+  background-color: #f1f8f4;
+  text-align: center;
+}
+
+.contact h3 {
+  color: #006400;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #006400;
+  font-size: 1.5rem;
+}
+
+.social-links a:hover {
+  color: #004d00;
+}
+
+/* Student List */
+.student-list {
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.student-list h3 {
+  color: #006400;
+  margin-bottom: 1.5rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.student-card {
+  background-color: #e8f5e9;
+  border: 1px solid #b2dfdb;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #004d00;
+}
+
+/* Footer */
+.footer {
+  background-color: #006400;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
