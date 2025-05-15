@@ -238,4 +238,91 @@ textarea {
     flex-direction: column;
     gap: 0.5rem;
   }
+/* Responsive Breakpoints */
+@media (max-width: 992px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .navbar h1 {
+    margin-bottom: 1rem;
+  }
+  
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .navbar ul {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .navbar ul.active {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+  
+  .hero {
+    padding: 3rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .info {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+  
+  .image-box, .note {
+    min-width: 100%;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .register, .about, .contact, .student-list {
+    padding: 2rem 1rem;
+  }
+  
+  .student-card {
+    padding: 1rem;
+  }
+}
 }

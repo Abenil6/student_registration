@@ -6,10 +6,16 @@ export default function Info() {
       </div>
       <div className="note">
         <h3>Eligibility</h3>
-        <p>
-          Students must have a valid national ID and meet academic
-          qualifications for the intended program.
-        </p>
+        <div>
+           <h3>Eligibility Requirements:</h3>
+            <ul>
+               <li>Students must possess a valid national ID.</li>
+               <li>Students must meet the academic qualifications required for the intended program.</li>
+               <li>All documents must be verified and submitted before the enrollment deadline.</li>
+              <li>Eligibility will be reviewed by the admissions office to ensure compliance with program standards.</li>
+            </ul>
+       </div>
+
       </div>
     </section>
   );
